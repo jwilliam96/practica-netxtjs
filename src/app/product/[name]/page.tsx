@@ -1,14 +1,15 @@
-import { notFound, redirect } from "next/navigation";
 
-export default function ProductPage({ params }: { params: { name: string } }) {
 
+
+export async function generateStaticParams() {
     const products = ["carne", "huevo", "cereales"]
 
-    if (!products.includes(params.name)) {
+    return products.map((product) => ({
+        name: product
+    }))
+}
 
-        redirect(notFound())
-
-    }
+export default function ProductPage({ params }: { params: { name: string } }) {
 
     return (
         <div>
