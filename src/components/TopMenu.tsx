@@ -7,7 +7,7 @@ export default function TopMenu() {
 
     const pathname = usePathname()
 
-    const urls = [{ name: "Contact", url: "/contact" }, { name: "Dashboard", url: "/dashboard" }, { name: "Perfil", url: "/dashboard/perfil" }]
+    const urls = [{ name: "Contact", url: "/contact" }, { name: "Dashboard", url: "/dashboard" }, { name: "Perfil", url: "/dashboard/perfil" }, { name: "Ruta Paralela", url: "/parallelRoutes" }]
 
     return (
         <div className="bg-red-500 text-white py-4">
