@@ -2,18 +2,18 @@
 export default function Layout({
     children,
     noticias,
-    publict
+    publications
 }: {
     children: React.ReactNode
     noticias: React.ReactNode
-    publict: React.ReactNode
+    publications: React.ReactNode
 }) {
     return (
         <div>
             {children}
             <div className="grid grid-cols-2 gap-4 px-10">
                 {noticias}
-                {publict}
+                {publications}
             </div>
         </div>
     );
