@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TopMenu from "@/components/TopMenu";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,18 +13,21 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children
+  children, auth
 }: Readonly<{
   children: React.ReactNode,
+  auth: React.ReactNode
 
 }>) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <TopMenu />
-        <main>
-          {children}
-        </main>
+        <nav>
+          <Link href="/login">Open modal</Link>
+        </nav>
+        <div>{auth}</div>
+        <div>{children}</div>
       </body>
     </html>
   );
