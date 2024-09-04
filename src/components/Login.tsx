@@ -1,7 +1,7 @@
 
 export default function Login() {
     return (
-        <form action="" className="max-w-[400px] w-full ml-20 mt-20 border p-4 border-black grid gap-4">
+        <form action="" className="bg-white max-w-[400px] w-full ml-20 mt-20 border p-4 border-black grid gap-4">
 
             <h2>FORMULARIO LOGIN</h2>
 
