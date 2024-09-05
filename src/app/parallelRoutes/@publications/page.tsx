@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PublicPage() {
     return (
-        <div className="bg-white border">
+        <div className="bg-white border overflow-hidden">
 
 
             <div className="relative isolate px-6 pt-14 lg:px-8">
