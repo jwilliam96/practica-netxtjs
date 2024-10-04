@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <TopMenu />
         <nav>
-          <Link href="/login">Open modal</Link>
+          <Link href="/login">Iniciar session</Link>
         </nav>
         <div>{auth}</div>
         <div>{children}</div>
